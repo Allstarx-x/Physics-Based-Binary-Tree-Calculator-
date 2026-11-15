@@ -1,7 +1,15 @@
 #include<iostream>
 #include<chrono>
 #include<ctime>
-#include <core/include/node.hpp>
+#include "../core/include/node.hpp"
+#include "../core/include/uniquemaths.hpp"
+
+
+//git add .
+//git commit -m
+//git push
+
+
 //----------------------------------------------
 void diagnosticsinfo() {
     // Get current system time
@@ -28,5 +36,6 @@ void diagnosticsinfo() {
 
 int main() {
     diagnosticsinfo();
+    std::cout << umaths::sin(20);
     return 0;
-}
+} 

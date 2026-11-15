@@ -3,7 +3,7 @@
 //requirements
 //1)make a node class that can be used to create a binary tree  
 //2) runtime polymorphism
-//3)I need to add a way for it to handle different types of inputs eg constants or derrivatives 
+//3I need to add a way for it to handle different types of inputs eg constants or derrivatives 
 //my way of doing this is to have the father node be a base class and the child nodes be derived classes that can handle different types of inputs
 // and have some kind of order of operations for the binary tree to follow
 
