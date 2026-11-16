@@ -36,7 +36,20 @@ double round(double a,double b){
     int fact =(a*k)+0.5;
     return fact/k;
 }
-double factorial(double para){}
+double factorial(double para){
+    if( para <0 &&static_cast<long long>(para) == para){
+        return 1/0;
+    }
+    return gamma(para+1);
+}
+
+}
+long long fast_factorial(int para){
+    long long temp = 1;
+    for(int i = 0; i < para; i++){
+        temp*=i;
+    }
+    return temp;
 }
 int fibonacci(int para){
     if (para < 2){

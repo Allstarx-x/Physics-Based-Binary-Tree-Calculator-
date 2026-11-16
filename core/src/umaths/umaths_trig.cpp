@@ -6,7 +6,7 @@ double sin(double para){
     int terms =10; // will change;
     int k = 1;
     for(int i = 1; i < terms; i+=2){
-        temp += k*(power(para,i)/factorial(i));
+        temp += k*(power(para,i)/fast_factorial(i));
         k*=-1;
     }
     return temp;
@@ -16,7 +16,7 @@ double cos(double para){
     int terms =10; // will change;
     int k = 1;
     for(int i = 0; i < terms; i+=2){
-        temp += k*(power(para,i)/factorial(i));
+        temp += k*(power(para,i)/fast_factorial(i));
         k*=-1;
     }
     return temp;
