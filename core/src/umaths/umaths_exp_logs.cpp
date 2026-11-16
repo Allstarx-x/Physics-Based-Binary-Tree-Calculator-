@@ -3,6 +3,7 @@
 namespace umaths{
 double log(double para,double base){
 }
+
 double power(double para, double exp){
     if(para ==0){
         if (exp >0){
@@ -33,6 +34,7 @@ double ln(double para){
 
 }
 
+
 double unique_exp(double para){
     int terms = 50; //will change also
     double k = 1;
@@ -45,8 +47,6 @@ double unique_exp(double para){
     return ans;
 
 }
-
-
 
 
 

@@ -26,7 +26,7 @@ double tan(double para){
 }
 double asin(double para){
         if(para > 0.7){
-            return PI/2 - 2* asin(power((1+para)/2, 0.5));
+            return PI/2 - 2* asin(fast_sqrt((1+para)/2));
         }
         if(para < -0.7){
             return -(PI/2 - 2* asin(power((1+para)/2, 0.5)));

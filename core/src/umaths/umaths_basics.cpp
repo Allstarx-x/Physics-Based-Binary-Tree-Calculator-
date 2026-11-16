@@ -1,6 +1,9 @@
 #include "uniquemaths.hpp"
 namespace umaths{
 //regular stuff
+double fast_sqrt(double para){
+    return __builtin_sqrtf(para);
+}
 double abs(double  para){
     if(para < 0){
         return -para;
